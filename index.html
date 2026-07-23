@@ -1,220 +1,123 @@
-:root{
-  --bg:#f4f7fb;
-  --panel:#ffffff;
-  --ink:#243647;
-  --muted:#5e6c7b;
-  --navy:#2f4256;
-  --navy-2:#3e556c;
-  --line:rgba(47,66,86,.12);
-  --shadow:0 18px 50px rgba(20,34,48,.10);
-  --radius:24px;
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Production Prisk | Church Production Resources</title>
+  <meta name="description" content="Download original church production templates, ProPresenter themes, and safe resources from Production Prisk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="brand-card">
+        <div class="logo-wrap">
+          <img src="assets/logo.png" alt="Production Prisk Logo" class="logo" />
+        </div>
+        <p class="eyebrow">Church Production Resources</p>
+        <h1>Modern Templates For ProPresenter And Church Production.</h1>
+        <p class="subhead">
+          Download original templates, themes, and production assets built to help your team work faster and stay consistent.
+        </p>
+        <div class="hero-actions">
+          <a href="#downloads" class="button primary">Browse Downloads</a>
+          <a href="#about" class="button secondary">About Production Prisk</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  color:var(--ink);
-  background:
-    radial-gradient(circle at top, rgba(62,85,108,.10), transparent 34%),
-    linear-gradient(180deg,#ffffff 0%, var(--bg) 100%);
-}
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What This Is</p>
+          <h2>A Simple Place To Share Useful Church Production Files.</h2>
+        </div>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Templates</h3>
+            <p>Clean layouts for slides, lower thirds, announcements, and recurring service graphics.</p>
+          </article>
+          <article class="info-card">
+            <h3>Themes</h3>
+            <p>Consistent visual systems for ProPresenter that help your team keep every presentation on brand.</p>
+          </article>
+          <article class="info-card">
+            <h3>Resources</h3>
+            <p>Free tools and useful downloads that are safe to share because they do not include copyrighted lyrics.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
+    <section id="downloads" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Downloads</p>
+          <h2>Featured Files</h2>
+        </div>
 
-.container{
-  width:min(1120px, calc(100% - 32px));
-  margin:0 auto;
-}
+        <div class="download-grid">
+          <article class="download-card">
+            <div class="card-top">
+              <span class="tag">Free</span>
+              <h3>Starter Template Pack</h3>
+            </div>
+            <p>Basic church production layouts for quick reuse in ProPresenter.</p>
+            <a href="assets/downloads/template-1.zip" class="button primary small" download>Download</a>
+          </article>
 
-.hero{
-  padding:72px 0 28px;
-}
+          <article class="download-card">
+            <div class="card-top">
+              <span class="tag">Free</span>
+              <h3>Brand Theme Pack</h3>
+            </div>
+            <p>A clean branded theme set based on the Production Prisk look and feel.</p>
+            <a href="assets/downloads/theme-1.zip" class="button primary small" download>Download</a>
+          </article>
 
-.hero-grid{
-  display:grid;
-  align-items:center;
-  min-height:68vh;
-}
+          <article class="download-card">
+            <div class="card-top">
+              <span class="tag">Guide</span>
+              <h3>How To Use These Files</h3>
+            </div>
+            <p>A simple guide explaining how to import and use each download.</p>
+            <a href="assets/downloads/guide.pdf" class="button primary small" download>Download</a>
+          </article>
 
-.brand-card,
-.cta-panel,
-.info-card,
-.download-card{
-  background:rgba(255,255,255,.86);
-  backdrop-filter:blur(10px);
-  border:1px solid var(--line);
-  box-shadow:var(--shadow);
-  border-radius:var(--radius);
-}
+          <article class="download-card">
+            <div class="card-top">
+              <span class="tag">Hymn</span>
+              <h3>Public Domain Hymn Pack</h3>
+            </div>
+            <p>Downloadable public domain hymn files for church production use.</p>
+            <a href="assets/downloads/hymn-pack.zip" class="button primary small" download>Download</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.brand-card{
-  padding:42px;
-  max-width:840px;
-}
+    <section class="section">
+      <div class="container cta-panel">
+        <div>
+          <p class="eyebrow">Stay Updated</p>
+          <h2>New Resources Will Be Added Over Time.</h2>
+          <p>Use this page as your central hub for free materials, templates, and future uploads.</p>
+        </div>
+        <a href="mailto:productionprisk@gmail.com" class="button secondary">Contact</a>
+      </div>
+    </section>
+  </main>
 
-.logo-wrap{
-  width:120px;
-  height:120px;
-  border-radius:28px;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(145deg, rgba(47,66,86,.08), rgba(62,85,108,.03));
-  margin-bottom:22px;
-}
-
-.logo{
-  width:108px;
-  height:108px;
-  object-fit:contain;
-}
-
-.eyebrow{
-  margin:0 0 10px;
-  font-size:.78rem;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  color:var(--navy-2);
-  font-weight:700;
-}
-
-h1,h2,h3{
-  font-family:Oswald,Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;
-  letter-spacing:.01em;
-  margin:0;
-  color:var(--navy);
-  line-height:1.02;
-}
-
-h1{font-size:clamp(3rem, 6vw, 5.4rem); max-width:10ch}
-h2{font-size:clamp(2rem, 4vw, 3rem)}
-h3{font-size:1.6rem}
-
-.subhead,
-.info-card p,
-.download-card p,
-.cta-panel p,
-.footer p{
-  color:var(--muted);
-  line-height:1.7;
-  font-size:1rem;
-}
-
-.subhead{
-  max-width:60ch;
-  margin:18px 0 0;
-  font-size:1.06rem;
-}
-
-.hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  margin-top:28px;
-}
-
-.button{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:14px 22px;
-  border-radius:999px;
-  font-weight:700;
-  transition:transform .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
-}
-
-.button:hover{transform:translateY(-2px)}
-.primary{
-  background:var(--navy);
-  color:#fff;
-  border:1px solid var(--navy);
-}
-.primary:hover{background:#223240}
-.secondary{
-  background:transparent;
-  color:var(--navy);
-  border:1px solid rgba(47,66,86,.18);
-}
-.small{padding:12px 18px;font-size:.95rem}
-
-.section{
-  padding:34px 0;
-}
-
-.section.alt{
-  padding:42px 0;
-}
-
-.section-heading{
-  margin-bottom:22px;
-}
-
-.info-grid,
-.download-grid{
-  display:grid;
-  grid-template-columns:repeat(3, minmax(0,1fr));
-  gap:18px;
-}
-
-.info-card,
-.download-card{
-  padding:24px;
-}
-
-.info-card h3,
-.download-card h3{
-  margin-bottom:10px;
-}
-
-.tag{
-  display:inline-flex;
-  margin-bottom:12px;
-  padding:7px 12px;
-  border-radius:999px;
-  background:rgba(47,66,86,.08);
-  color:var(--navy);
-  font-size:.8rem;
-  font-weight:800;
-  letter-spacing:.04em;
-  text-transform:uppercase;
-}
-
-.cta-panel{
-  padding:28px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
-}
-
-.footer{
-  padding:22px 0 36px;
-}
-
-.footer-inner{
-  display:flex;
-  justify-content:space-between;
-  gap:16px;
-  border-top:1px solid var(--line);
-  padding-top:18px;
-}
-
-@media (max-width: 900px){
-  .info-grid,
-  .download-grid{
-    grid-template-columns:1fr;
-  }
-  .cta-panel,
-  .footer-inner{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-  .brand-card{
-    padding:28px;
-  }
-  .hero{
-    padding-top:34px;
-  }
-}
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Production Prisk. All Rights Reserved.</p>
+      <p>Church Production Templates And Resources.</p>
+    </div>
+  </footer>
+</body>
+</html>
